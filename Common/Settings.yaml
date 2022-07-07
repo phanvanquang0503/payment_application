@@ -1,0 +1,30 @@
+#--------------------DRIVER PATH-------------------------
+CHROME_DRIVER_PATH_WINS:    /Driver/chrome/chromedriver.exe
+CHROME_DRIVER_PATH_UNIX:    /Driver/linux/chromedriver
+
+#Browsers: Chrome/fireFox/IE
+BROWSER: Chrome
+
+#--------------------ACCOUNT LOGIN-------------------------
+ACCOUNTS:
+  USER1:
+    USERNAME: Katharina_Bernier
+    PASSWORD: s3cret
+  USER2:
+    USERNAME: Tavares_Barrows
+    PASSWORD: s3cret
+  USER3:
+    USERNAME: Allie2
+    PASSWORD: s3cret
+  USER4:
+    USERNAME: Giovanna74
+    PASSWORD: s3cret
+  USER5:
+    USERNAME: Jessyca.Kuhic
+    PASSWORD: s3cret
+
+#--------------------SYSTEM ENVAIROMENT-------------------------
+ENVAIROMENTS:
+  DEV:
+    SIGIN_URL: http://localhost:3000/signin
+    SIGNUP_URL: http://localhost:3000/signup
