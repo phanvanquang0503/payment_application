@@ -45,3 +45,11 @@ Login With Empty Username And Invalid Password Should Be Fail
     Wait Until Element Contains  ${USERNAME_ERROR_MSG}  ${MSG_ERROR_USN}
     Element Should Be Disabled  ${BUTTON_LOGIN}
     [Teardown]  Close Browser
+
+Login With Data Registed Should Be Pass
+    [Arguments]  ${username}  ${password}
+    Login To Payment App    ${username}  ${password}
+    Sleep  5s
+    Verify Login Success
+    [Teardown]  Close Browser
+

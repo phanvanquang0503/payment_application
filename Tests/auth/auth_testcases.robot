@@ -51,4 +51,4 @@ TC_LOGIN_005: Should Allow A Visitor To Sign-Up, Login, And Logout
     [Setup]  User Goes To Payment Login Page  ${ENVAIROMENTS.DEV.SIGNUP_URL}
     [Tags]  signin_005
     Verify And Register Successfully With Valid Data
-    Login With Valid Credentials Should Pass  ${REGISTER.USER1.USERNAME}  ${REGISTER.USER1.PASSWORD}
+    Login With Data Registed Should Be Pass  ${REGISTER.USER1.USERNAME}  ${REGISTER.USER1.PASSWORD}
