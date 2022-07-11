@@ -1,0 +1,7 @@
+#--------------------ACCOUNT SIGNUP-------------------------
+REGISTER:
+  USER1:
+    FIRSTNAME:  PHAN
+    LASTNAME:  QUANG
+    USERNAME:  PVQUANG
+    PASSWORD:  s3cret

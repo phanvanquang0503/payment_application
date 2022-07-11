@@ -4,8 +4,8 @@ Library           Collections
 Library           String
 Library           DateTime
 Library           OperatingSystem
+Library           BuiltIn
 Variables         Settings.yaml
-Resource          Screenshot_Keywords.robot
 
 *** Keywords ***
 Open Browser And Go To Login Page
@@ -46,7 +46,7 @@ Open Chrome Browser And Go To Login Page
     ${kwargs}=    BuiltIn.Create Dictionary    executable_path=${driver_path}
     Create Webdriver    Chrome    chrome_options=${chrome_options}    executable_path=${driver_path}
     Run Keyword If    '${system}'=='Windows'    Maximize Browser Window
-    Go To    ${login_url}
+    Go to    ${login_url}
 
 Open Firefox Browser And Go To Login Page
     [Documentation]    Open Firefox Browser and go to login page.

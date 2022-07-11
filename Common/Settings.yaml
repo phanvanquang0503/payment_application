@@ -22,6 +22,12 @@ ACCOUNTS:
   USER5:
     USERNAME: Jessyca.Kuhic
     PASSWORD: s3cret
+  USER6:
+    USERNAME: Quang
+    PASSWORD: 12312
+  USER7:
+    USERNAME: Quang
+    PASSWORD: 123
 
 #--------------------SYSTEM ENVAIROMENT-------------------------
 ENVAIROMENTS:
