@@ -34,3 +34,4 @@ ENVAIROMENTS:
   DEV:
     SIGIN_URL: http://localhost:3000/signin
     SIGNUP_URL: http://localhost:3000/signup
+    BANKACCOUNT: http://localhost:3000/bankaccounts

@@ -29,9 +29,3 @@ Logout Payment Application And Close Browser
     [Documentation]    Clicks on Logout button and close this browser.
     Click On Logout Button
     Close Browser
-
-Create New Bank Account
-    Input Text  ${BANKNAME_LCT}  ${BANK_ACCOUNT.BANK_NAME}
-    Input Text  ${ROUTING_NUMBER_LCT}  ${BANK_ACCOUNT.ROUTING_NUMBER}
-    Input Text  ${ACCOUNT_NUMBER_LCT}  ${BANK_ACCOUNT.ACCOUNT_NUMBER}
-    Click Button Save

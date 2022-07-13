@@ -9,6 +9,12 @@ User Goes To Payment Login Page
 Verify That Logout Successfully
     Wait Until Location Is  ${ENVAIROMENTS.DEV.SIGIN_URL}
 
+Navigate Login Page And Login Successfully
+    [Arguments]  ${username}  ${password}
+    User Goes To Payment Login Page  ${ENVAIROMENTS.DEV.SIGIN_URL}
+    Login To Payment App    ${username}  ${password}
+    Verify Login Success
+
 Login With Valid Credentials Should Pass
     [Arguments]  ${username}  ${password}
     User Goes To Payment Login Page  ${ENVAIROMENTS.DEV.SIGIN_URL}
@@ -50,7 +56,7 @@ Login With Data Registed Should Be Pass
     ${status}  Run Keyword And Return Status  Element Should Be Visible  ${BUTTON_NEXT}
     IF  ${status} == ${TRUE}
         Click Element  ${BUTTON_NEXT}
-        Create New Bank Account
+        Create New Bank Account    ${BANK_ACCOUNT_01.BANK_NAME}  ${BANK_ACCOUNT_01.ROUTING_NUMBER}  ${BANK_ACCOUNT_01.ACCOUNT_NUMBER}
         Click Element  ${BUTTON_DONE}
          Verify Login Success
     ELSE

@@ -9,7 +9,7 @@ Resource    ${EXECDIR}/Common/Common_Keywords.robot
 Variables   ${EXECDIR}/Common/Settings.yaml
 Variables   ${EXECDIR}/Pages/Home/home_data.yaml
 Variables   ${EXECDIR}/Pages/Register/register_data.yaml
-Variables   ${EXECDIR}/Tests/auth/auth_data.yaml
+Variables   ${EXECDIR}/Pages/Bankaccounts/bankaccount_data.yaml
 #Home
 Resource    ${EXECDIR}/Pages/Home/Home_Actions.robot
 Resource    ${EXECDIR}/Pages/Home/Home_Locators.robot
@@ -22,6 +22,7 @@ Resource    ${EXECDIR}/Pages/Login/Login_Page.robot
 Resource    ${EXECDIR}/Pages/Register/Register_Actions.robot
 Resource    ${EXECDIR}/Pages/Register/Register_Locators.robot
 Resource    ${EXECDIR}/Pages/Register/Register_Page.robot
-#auth
-Resource    ${EXECDIR}/Tests/auth/auth_keywords.robot
-Resource    ${EXECDIR}/Tests/auth/auth_variables.robot
+#bankaccount
+Resource    ${EXECDIR}/Pages/Bankaccounts/Bankaccount_Actions.robot
+Resource    ${EXECDIR}/Pages/Bankaccounts/Bankaccount_Locators.robot
+Resource    ${EXECDIR}/Pages/Bankaccounts/Bankaccount_Page.robot
