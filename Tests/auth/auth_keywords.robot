@@ -1,4 +1,4 @@
 *** Settings ***
-Resource          auth_variables.robot
+Resource          ../../Common/init.resource
 
 *** Keywords ***

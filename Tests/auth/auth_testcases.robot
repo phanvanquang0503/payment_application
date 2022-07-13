@@ -1,10 +1,6 @@
 *** Settings ***
 Documentation  Test suite contains all the test case of sign in and sign up function
-Resource  ../../Pages/Login/Login_Page.robot
-Resource  auth_keywords.robot
-Resource   ../../Pages/Home/Home_Page.robot
-Resource    ../../Pages/Register/Register_Page.robot
-Variables    auth_data.yaml
+Resource    ../../Common/init.resource
 Force Tags  payment  signin
 Test Teardown  Close Browser
 
