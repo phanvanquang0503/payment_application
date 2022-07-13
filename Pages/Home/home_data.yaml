@@ -1,0 +1,5 @@
+#--------------------ACCOUNT SIGNUP-------------------------
+BANK_ACCOUNT:
+    BANK_NAME:  Vietcombank
+    ROUTING_NUMBER:  123456789
+    ACCOUNT_NUMBER:  123456789012

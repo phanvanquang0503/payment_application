@@ -1,8 +1,5 @@
 *** Settings ***
-Resource  Login_Actions.robot
-Resource  ../../Common/Common_Keywords.robot
-Resource  ../Home/Home_Page.robot
-Variables  ../../Common/Settings.yaml
+Resource    ../../Common/init.resource
 
 *** Keywords ***
 User Goes To Payment Login Page
@@ -48,8 +45,14 @@ Login With Empty Username And Invalid Password Should Be Fail
 
 Login With Data Registed Should Be Pass
     [Arguments]  ${username}  ${password}
-    Login To Payment App    ${username}  ${password}
+    Login To Payment App  ${username}  ${password}
     Sleep  5s
-    Verify Login Success
-    [Teardown]  Close Browser
-
+    ${status}  Run Keyword And Return Status  Element Should Be Visible  ${BUTTON_NEXT}
+    IF  ${status} == ${TRUE}
+        Click Element  ${BUTTON_NEXT}
+        Create New Bank Account
+        Click Element  ${BUTTON_DONE}
+         Verify Login Success
+    ELSE
+        Verify Login Success
+    END

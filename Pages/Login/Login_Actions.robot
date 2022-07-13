@@ -1,6 +1,3 @@
-*** Settings ***
-Resource    Login_Locators.robot
-
 *** Keywords ***
 Input Userame And Password
     [Arguments]  ${username}  ${password}

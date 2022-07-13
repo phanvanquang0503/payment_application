@@ -1,7 +1,5 @@
 *** Settings ***
-Variables    ../../Common/Settings.yaml
-Resource    Home_Actions.robot
-Resource    ../Login/Login_Page.robot
+Resource    ../../Common/init.resource
 
 *** Keywords ***
 User Logs In To Home Page
@@ -21,14 +19,19 @@ Login To Payment App
     Click On Login Button
 
 Verify Login Success
-    [Documentation]    Verifies some contents on Home page are displayed.
+    [Documentation]    Veri${EXECDIR}/Pages/Home/Home_Actions.robotfies some contents on Home page are displayed.
     Wait Until Page Contains Element    ${HOME}
     Wait Until Page Contains Element    ${MY_ACCOUNT}
-    Wait Until Page Contains Element    ${BANK_ACCOUNT}
+    Wait Until Page Contains Element    ${BANK_ACCOUNT_LCT}
     Wait Until Page Contains Element    ${NOTIFICATION}
 
 Logout Payment Application And Close Browser
     [Documentation]    Clicks on Logout button and close this browser.
     Click On Logout Button
-    Verify That Logout Successfully
     Close Browser
+
+Create New Bank Account
+    Input Text  ${BANKNAME_LCT}  ${BANK_ACCOUNT.BANK_NAME}
+    Input Text  ${ROUTING_NUMBER_LCT}  ${BANK_ACCOUNT.ROUTING_NUMBER}
+    Input Text  ${ACCOUNT_NUMBER_LCT}  ${BANK_ACCOUNT.ACCOUNT_NUMBER}
+    Click Button Save

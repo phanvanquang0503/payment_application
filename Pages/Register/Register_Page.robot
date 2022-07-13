@@ -1,6 +1,5 @@
 *** Settings ***
-Resource    Register_Actions.robot
-Resource    ../Home/Home_Actions.robot
+Resource    ../../Common/init.resource
 
 *** Keywords ***
 

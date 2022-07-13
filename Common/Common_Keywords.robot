@@ -1,11 +1,5 @@
 *** Settings ***
-Library           ExtendedSeleniumLibrary
-Library           Collections
-Library           String
-Library           DateTime
-Library           OperatingSystem
-Library           BuiltIn
-Variables         Settings.yaml
+Resource    ${EXECDIR}/Common/init.resource
 
 *** Keywords ***
 Open Browser And Go To Login Page

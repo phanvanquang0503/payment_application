@@ -1,8 +1,3 @@
-*** Settings ***
-Resource  Register_Locators.robot
-Variables    register_data.yaml
-Variables    ../../Common/Settings.yaml
-
 *** Keywords ***
 Fill In Form Register
     Input Text  ${FIRST_NAME_LCT}  ${REGISTER.USER1.FIRSTNAME}
