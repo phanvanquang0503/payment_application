@@ -30,3 +30,11 @@ Restore Amount For User A
     Click On "PAY" Botton
     Log Out User
     Close Browser
+
+Verify Error Message Of Transaction
+    Click Element  ${AMOUNT_LCT}
+    Click Element  ${NOTE_LCT}
+    Click Element  ${MAIN}
+    Sleep  2s
+    Page Should Contain Element  ${ERROR_AMOUT}  ${MESSAGE_ERROR_AMOUNT}
+    Page Should Contain Element  ${ERROR_DESC}  ${MESSAGE_ERROR_DESC}

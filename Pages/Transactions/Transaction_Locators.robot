@@ -11,3 +11,8 @@ ${SEARCH_USERB}   phanvanquang0503
 ${LIST_USER}     //ul[@data-test='users-list']
 ${USERA}         //li[@data-test='user-list-item-t45AiwidW']
 ${USERB}         //li[@data-test='user-list-item-ZHGc9YzG9']
+${ERROR_AMOUT}    //p[@id='transaction-create-amount-input-helper-text']
+${MESSAGE_ERROR_AMOUNT}    Please enter a valid amount
+${ERROR_DESC}    //p[@id='transaction-create-description-input-helper-text']
+${MESSAGE_ERROR_DESC}    Please enter a note
+${MAIN}    //main[@data-test="main"]
