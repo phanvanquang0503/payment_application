@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Test suite contains all the test case of sign in and sign up function
+Documentation  Test suite contains all the test case of bank account function
 Resource    ../../Common/init.resource
 Force Tags  payment  bankaccounts
 Test Setup    Navigate Login Page And Login Successfully    ${ACCOUNTS.USER1.USERNAME}    ${ACCOUNTS.USER1.PASSWORD}

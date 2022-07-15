@@ -28,10 +28,13 @@ ACCOUNTS:
   USER7:
     USERNAME: Quang
     PASSWORD: 123
-
+  USER8:
+    USERNAME: phanvanquang0503
+    PASSWORD: s3cret
 #--------------------SYSTEM ENVAIROMENT-------------------------
 ENVAIROMENTS:
   DEV:
     SIGIN_URL: http://localhost:3000/signin
     SIGNUP_URL: http://localhost:3000/signup
     BANKACCOUNT: http://localhost:3000/bankaccounts
+    TRANSACTION: http://localhost:3000/transaction/new

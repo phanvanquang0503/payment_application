@@ -1,0 +1,22 @@
+#--------------------TRANSACTION-------------------------
+USER_01:
+    AMOUNT: 100
+    NOTE: BUY A DOG
+USER_02:
+    AMOUNT: 100
+    NOTE: BUY A HOUSE
+USER_03:
+    AMOUNT: 0
+    NOTE: BUY A HOUSE
+USER_04:
+    AMOUNT: -100
+    NOTE: BUY A HOUSE
+USER_05:
+    AMOUNT: 
+    NOTE: BUY A HOUSE
+USER_06:
+    AMOUNT: 100
+    NOTE: 
+USER_07:
+    AMOUNT: 
+    NOTE: 
