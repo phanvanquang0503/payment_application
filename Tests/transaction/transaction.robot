@@ -47,3 +47,18 @@ TC_CREATE_BANK_ACCOUNT_003: Verify Transaction Successfully When User A Input Am
     Login User B With Valid Then Navigate To Home Page    ${ACCOUNTS.USER8.USERNAME}  ${ACCOUNTS.USER8.PASSWORD}
     # Verify account balance of user B with the amount that user A paid
     [Teardown]  Restore Amount For User A
+
+TC_CREATE_BANK_ACCOUNT_004: Test
+    [Documentation]  user can create new transaction successfully.
+    [Tags]  transaction_004
+    Verify Option In Side Bar    Home
+    Verify Option In Side Bar    My Account
+    Verify Option In Side Bar    Bank Accounts
+    Verify Option In Side Bar    Notifications
+    [Teardown]  Close Browser
+
+*** Keywords ***
+Verify Option In Side Bar
+    [Arguments]  ${text}
+    ${option}=  Replace String  ${SIDE_BAR}  <TEXT>  ${text}
+    Run Keyword And Continue On Failure  Element Text Should Be  ${option}  ${text}

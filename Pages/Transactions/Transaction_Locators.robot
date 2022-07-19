@@ -16,3 +16,4 @@ ${MESSAGE_ERROR_AMOUNT}    Please enter a valid amount
 ${ERROR_DESC}    //p[@id='transaction-create-description-input-helper-text']
 ${MESSAGE_ERROR_DESC}    Please enter a note
 ${MAIN}    //main[@data-test="main"]
+${SIDE_BAR}    (//*[@class='MuiList-root MuiList-padding'])[1]//div[@class='MuiListItemText-root']/span[text()='<TEXT>']
