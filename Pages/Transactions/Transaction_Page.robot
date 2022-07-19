@@ -9,7 +9,7 @@ Verify Transaction Page Visible
 
 Verify List User Visible
     Wait Until Element Is Visible  ${LIST_USER}
-    Wait Until Element Is Visible  ${USERB}
+    # Wait Until Element Is Visible  ${USERB}
 
 Login User B With Valid Then Navigate To Home Page
     [Arguments]  ${username}  ${password}
